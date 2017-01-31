@@ -15,7 +15,14 @@
             [clojure.pprint :refer :all])
   (:import [java.io.File]))
 
-(def pamela-files [["test/pamela/cannon.pamela" "(game.main)"]])
+(def pamela-files [["test/pamela/cannon.pamela" "(game.main)"]
+                   ["test/pamela/ir-test.pamela" "(game.main)"]
+                   ["test/pamela/tpn-between.pamela" "(tpn.elephant)"]
+                   ["test/pamela/regression/between-ends-example.pamela" "(between-ends-example.example)"]
+                   ["test/pamela/regression/between-example.pamela" "(between-example.example)"]
+                   ["test/pamela/regression/between-starts-example.pamela" "(between-starts-example.example)"]
+                   ["test/pamela/regression/tpn-costs" "(tpn-costs.start)"]
+                   ])
 (def outdir "test/gen-files/")
 (def htn-edn-suffix ".htn.edn")
 (def htn-json-suffix ".htn.json")
